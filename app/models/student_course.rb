@@ -6,4 +6,8 @@ class StudentCourse < ApplicationRecord
 
   belongs_to :student
   belongs_to :course
+
+  def self.rank
+    self.order(grade: :desc)
+  end
 end
