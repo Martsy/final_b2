@@ -8,6 +8,6 @@ class StudentCourse < ApplicationRecord
   belongs_to :course
 
   def self.rank
-    self.order(grade: :desc)
+    order(grade: :desc)
   end
 end

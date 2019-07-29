@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Student < ApplicationRecord
   validates_presence_of :name
 

@@ -1,6 +1,4 @@
-# frozen_string_literal: true
-
-require 'rails_helper'
+require 'rails_helper' 
 
 RSpec.describe 'As a Visitor' do
   describe 'When I visit a student show page' do
