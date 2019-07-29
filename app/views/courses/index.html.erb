@@ -1,0 +1,10 @@
+<h1> Student Course Rank</h1>
+
+<% @courses.each do |course| %>
+  <section id='course-<%= course.id %>'>
+    <h2><%= course.name %></h2>
+      <% course.student_courses.rank.each do |student_course| %>
+        <h3>Name: <%= student_course.student.name %>  Grade: <%= student_course.grade %></h3>
+      <% end %>
+  </section>
+<% end %>
