@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class StudentCourse < ApplicationRecord
   validates_presence_of :grade
   validates :grade, presence: true, numericality: true
